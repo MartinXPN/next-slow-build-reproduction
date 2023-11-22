@@ -1,5 +1,14 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
+
+## Steps to reproduce the slow build
+```shell
+npm run build     # (~500s) This will build the app with the latest Next.js version
+npm uninstall next && npm install next@13.4.19 && rm -rf .next
+npm run build     # (~40s) This will build the app with the previous Next.js version
+```
+
+
 ## Getting Started
 
 First, run the development server:

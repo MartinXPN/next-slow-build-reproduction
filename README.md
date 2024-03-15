@@ -1,7 +1,7 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 
-## Steps to reproduce the slow build ([#58759](https://github.com/vercel/next.js/issues/58759))
+## Steps to reproduce the slow build ([#63315](https://github.com/vercel/next.js/issues/63315))
 This repo shows that the latest NextJS version is ~15X slower than the previous one (13.4.19) when building the project.
 ```shell
 # You can run `yarn build` instead to see the execution time

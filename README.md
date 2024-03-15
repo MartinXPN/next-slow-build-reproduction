@@ -2,12 +2,15 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 
 ## Steps to reproduce the slow build ([#58759](https://github.com/vercel/next.js/issues/58759))
+This repo shows that the latest NextJS version is ~15X slower than the previous one (13.4.19) when building the project.
 ```shell
+# You can run `yarn build` instead to see the execution time
 npm run build     # (~500s) This will build the app with the latest Next.js version
 npm uninstall next && npm install next@13.4.19 && rm -rf .next
-npm run build     # (~40s) This will build the app with the previous Next.js version
+npm run build     # (~35s) This will build the app with the previous Next.js version
 ```
 
+---
 
 ## Getting Started
 
